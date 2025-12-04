@@ -112,7 +112,7 @@ Correlation ≈ **22%**, indicating a weak but notable relationship.
 ## How to Run
 
 ### Clone the Repository
-` ` `bash git clone https://github.com/yourusername/CovidCasesAnalysis.git
+```bash git clone https://github.com/yourusername/CovidCasesAnalysis.git```
 
 **Install Required Packages**
 - bash
@@ -122,6 +122,8 @@ Correlation ≈ **22%**, indicating a weak but notable relationship.
 - bash
 - Copy code
 - jupyter notebook covid_analysis.ipynb
+
+---
 
 ## Future Improvements
 - Add time-series forecasting for cases and deaths
@@ -134,9 +136,13 @@ Correlation ≈ **22%**, indicating a weak but notable relationship.
 
 - Use machine learning to predict death percentages
 
+---
+
 ## Contributing
 Pull requests are welcome.
 Feel free to add more visualizations, extend the analysis, or enhance data quality.
+
+---
 
 ## Support
 If this repository was helpful, consider giving it a star to support more analytical projects.
