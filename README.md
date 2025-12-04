@@ -112,7 +112,8 @@ Correlation ≈ **22%**, indicating a weak but notable relationship.
 ## How to Run
 
 ### Clone the Repository
-```bash git clone https://github.com/yourusername/CovidCasesAnalysis.git```
+bash
+``` git clone https://github.com/yourusername/CovidCasesAnalysis.git```
 
 **Install Required Packages**
 - bash
