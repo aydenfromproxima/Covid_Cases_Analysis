@@ -112,16 +112,15 @@ Correlation ≈ **22%**, indicating a weak but notable relationship.
 ## How to Run
 
 ### Clone the Repository
-``bash
-git clone https://github.com/yourusername/CovidCasesAnalysis.git
+` ` `bash git clone https://github.com/yourusername/CovidCasesAnalysis.git
 **Install Required Packages**
-bash
-Copy code
-pip install pandas numpy matplotlib seaborn
-Open the Notebook
-bash
-Copy code
-jupyter notebook covid_analysis.ipynb
+- bash
+- Copy code
+- pip install pandas numpy matplotlib seaborn
+- Open the Notebook
+- bash
+- Copy code
+- jupyter notebook covid_analysis.ipynb
 
 ## Future Improvements
 - Add time-series forecasting for cases and deaths
