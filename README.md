@@ -97,6 +97,7 @@ Continent-wise, Europe had the most cases, possibly due to dense travel and earl
 The correlation between total cases and deaths per million is weak, showing that medical care quality differed widely.
 
 **Language & Library Used**
+
 Python
 Pandas
 NumPy
