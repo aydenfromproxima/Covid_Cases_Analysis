@@ -1,131 +1,142 @@
-**COVID-19 Global Cases Analysis**
+# COVID-19 Global Cases Analysis
 
-A complete exploratory data analysis (EDA) of COVID-19 cases across 225 countries, including total cases, deaths, population, continent-wise distribution, death percentages, and correlations. This project helps identify how COVID-19 impacted different regions worldwide.
+A complete exploratory data analysis (EDA) of COVID-19 cases across 225 countries, covering total cases, deaths, population distribution, continent-wise impact, fatality percentages, and statistical correlations. This project helps visualize how the pandemic affected different regions worldwide.
 
-**Dataset Overview**
+---
 
-The dataset contains 225 rows × 10 columns, with global COVID-19 metrics aggregated by country.
+## Dataset Overview
 
-**Features include:**
+The dataset contains **225 rows × 10 columns**, summarizing COVID-19 metrics aggregated by country.
 
-Country
-Other Names
-ISO 3166-1 Alpha-3 Code
-Population
-Continent
-Total Cases
-Total Deaths
-Total Cases per 1M Population
-Total Deaths per 1M Population
-Death Percentage
-Data Preparation
+### Features Include:
+- Country  
+- Other Names  
+- ISO 3166-1 Alpha-3 Code  
+- Population  
+- Continent  
+- Total Cases  
+- Total Deaths  
+- Total Cases per 1M Population  
+- Total Deaths per 1M Population  
+- Death Percentage  
 
-**In the notebook, I :**
+---
 
- Loaded the dataset using pandas
- Checked data shape → 225 rows × 10 columns
- Identified 1 missing value in Other names
- Replaced missing value with “Montenegro”
- Confirmed no more null values
- Used describe() for statistical analysis
- Used .columns.tolist() to reveal invisible characters in column names
- Cleanly constructed numeric-only DataFrame for correlation analysis
+## Data Preparation
 
-**Analysis & Visualizations**
+Steps performed:
 
-Your notebook includes multiple visual insights and statistics:
+- Loaded dataset using pandas  
+- Verified shape: **225 × 10**  
+- Identified **1 missing value** in *Other Names*  
+- Replaced missing value with **"Montenegro"**  
+- Confirmed dataset had no further null values  
+- Generated statistical summaries using `.describe()`  
+- Used `.columns.tolist()` to identify hidden whitespace characters  
+- Constructed a numeric-only DataFrame for correlation analysis  
 
-1. Top 5 Countries by Total COVID Cases
+---
 
-USA
-India
-Brazil
-France
-Germany
-Bar chart plotted to visualize case severity.
+## Analysis & Visualizations
 
-2. Least 5 Countries by Total COVID Cases
+### 1. Top 5 Countries by Total COVID-19 Cases
+- USA  
+- India  
+- Brazil  
+- France  
+- Germany  
 
-Micronesia
-Saint Helena
-Marshall Islands
-Niue
-Western Sahara
-Visualized using scaled bar chart for better clarity.
+Visualized using a bar chart to compare severity.
 
-3. Top 5 Countries by Total Deaths
+### 2. Bottom 5 Countries by Total COVID-19 Cases
+- Micronesia  
+- Saint Helena  
+- Marshall Islands  
+- Niue  
+- Western Sahara  
 
-USA
-Brazil
-India
-Russia
-Mexico
+Shown using scaled bar charts for clarity.
 
-4. Countries with Highest Death Percentage
+### 3. Top 5 Countries by Total Deaths
+- USA  
+- Brazil  
+- India  
+- Russia  
+- Mexico  
 
-Yemen, Western Sahara, Sudan, Peru, Mexico had the highest fatality percentages.
+### 4. Countries with Highest Death Percentage
+Yemen, Western Sahara, Sudan, Peru, and Mexico showed unusually high fatality percentages due to low case counts.
 
-5. Continent-wise Total Cases
+### 5. Continent-wise Total Cases
+- Europe recorded the highest cases  
+- Followed by Asia and North America  
+- Oceania had the lowest case numbers  
 
-Bar chart showing:
-Europe had the highest cases
-Followed by Asia and North America
-Oceania had the least
+### 6. Population vs Total Cases (Scatter Plot)
+- General trend: Higher population → Higher cases  
+- Three major outliers highlighted  
+- Showed population alone didn’t determine outbreak severity  
 
-6. Population vs Total Cases (Scatter Plot)
+### 7. Correlation Heatmap
+Correlation between:
+- Total Cases  
+- Total Deaths per 1M  
 
-General trend: Higher population → Higher cases
-Three significant outliers highlighted
+Correlation ≈ **22%**, indicating a weak but notable relationship.
 
-Showed the importance of healthcare response and policy
+---
 
-7. Correlation Heatmap
+## Key Insights
 
-Between:
-Total Cases
-Total Deaths per 1M
-Correlation ≈ 22%, indicating a weak but noticeable relationship.
+- Only one missing value required imputation.  
+- USA had the highest number of cases and deaths globally.  
+- Micronesia had the lowest number of reported cases.  
+- High fatality percentages in some countries stemmed from small case counts.  
+- Population size does not fully explain infection spread—government response and preparedness were major factors.  
+- Europe had the highest continent-wise case count, likely influenced by dense travel networks and early exposure.  
+- Weak correlation between total cases and deaths per million suggests large differences in healthcare quality and response efficiency.
 
-**Key Insights**
+---
 
-The dataset required minimal cleaning — only one null value.
-USA has the highest cases and deaths.
-Micronesia recorded the lowest number of cases.
-Some countries showed unusually high death percentages due to low case counts.
-Population alone does not determine total infections — government response and infrastructure played major roles.
-Continent-wise, Europe had the most cases, possibly due to dense travel and early exposure.
-The correlation between total cases and deaths per million is weak, showing that medical care quality differed widely.
+## Technologies Used
 
-**Language & Library Used**
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Jupyter Notebook
+---
 
-**How to Run**
-Clone the repository:
+## How to Run
+
+### Clone the Repository
+``bash
 git clone https://github.com/yourusername/CovidCasesAnalysis.git
-
-Install required packages:
+**Install Required Packages**
+bash
+Copy code
 pip install pandas numpy matplotlib seaborn
-
-Open the notebook:
+Open the Notebook
+bash
+Copy code
 jupyter notebook covid_analysis.ipynb
 
-**Future Improvements**
-Add time-series forecasting for cases/deaths
-Compare vaccination rates between countries
-Build a dashboard using PowerBI / Streamlit / Plotly
-Add interactive continent-wise drilldown charts
-Include machine learning to predict death percentage
+## Future Improvements
+- Add time-series forecasting for cases and deaths
 
-Contributing
+- Compare vaccination rates across countries
 
-Pull requests are welcome!
-Feel free to extend the analysis, add plots, or clean the dataset further.
+- Build interactive dashboards using Streamlit, Plotly, or PowerBI
 
-**If You Found This Useful**
-Give this repository a star to support more analytical projects like this!
+- Add continent-wise interactive drilldowns
+
+- Use machine learning to predict death percentages
+
+## Contributing
+Pull requests are welcome.
+Feel free to add more visualizations, extend the analysis, or enhance data quality.
+
+## Support
+If this repository was helpful, consider giving it a star to support more analytical projects.
